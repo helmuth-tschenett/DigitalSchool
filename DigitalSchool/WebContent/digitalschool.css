@@ -1,0 +1,3 @@
+table.stundenplan  {  font-size: 80% }
+table.stundenplan td,th { text-align: center; padding: 3px; }
+table.stundenplan td:first-child { font-size: 75% }

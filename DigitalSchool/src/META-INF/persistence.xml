@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="DigitalSchool">
+		<class>com.oss.tfo.model.Benotung</class>
+		<class>com.oss.tfo.model.BenotungPK</class>
+		<class>com.oss.tfo.model.Eintragung</class>
+		<class>com.oss.tfo.model.EintragungPK</class>
+		<class>com.oss.tfo.model.Fach</class>
+		<class>com.oss.tfo.model.Fehlt</class>
+		<class>com.oss.tfo.model.FehltPK</class>
+		<class>com.oss.tfo.model.Klasse</class>
+		<class>com.oss.tfo.model.Professor</class>
+		<class>com.oss.tfo.model.Prüfung</class>
+		<class>com.oss.tfo.model.Prüfungstyp</class>
+		<class>com.oss.tfo.model.Schulraum</class>
+		<class>com.oss.tfo.model.Schüler</class>
+		<class>com.oss.tfo.model.Stunde</class>
+		<class>com.oss.tfo.model.StundePK</class>
+		<class>com.oss.tfo.model.Stundeneinteilung</class>
+		<class>com.oss.tfo.model.Tagesregister</class>
+		<class>com.oss.tfo.model.Unterrichtet</class>
+		<class>com.oss.tfo.model.UnterrichtetPK</class>
+		<properties>
+			<property name="eclipselink.logging.level" value="info"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/digitalschool"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="12345"/>
+            <!-- property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+            <property name="eclipselink.ddl-generation.output-mode" value="sql-script"/>
+            <property name="eclipselink.drop-ddl-jdbc-file-name" value="drop.sql"/>
+			<property name="eclipselink.create-ddl-jdbc-file-name" value="create.sql"/-->
+   		</properties>
+	</persistence-unit>
+</persistence>
